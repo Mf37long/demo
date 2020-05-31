@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration:none;
+	}
+	li{
+		list-style-type:none;
+	}
+	.header{
+		width:1920px;
+		height:2466px;
+	}
+	.header-top{
+		height:101px;
+		line-height:101px;
+	}
+	.container{
+		width:1179px;
+		height:101px;
+		line-height:101px;
+		margin:0 auto;
+	}
+	.duanluo1{
+		width:170px;
+		height:39px;
+		font-size:40px;
+		font-family:Microsoft YaHei;
+		font-weight:bold;
+		color:rgba(0,164,255,1);
+		display:inline-block;
+		line-height:39px;
+		float:left;
+		margin-top:33px;
+	}
+	.daohang1{
+		width:264px;
+		height:38px;
+		font-size:18px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		float:left;
+		position:relative;
+		top:40px;
+	}
+	.biaodan{
+		float:right;
+		margin-top:31px;
+	}
+	.daohang1 li{
+		float:left;
+		width:80px;
+		height:38px;
+		text-align:center;
+	}
+	.daohang1 a{
+		width:36px;
+		height:60px;
+		color:rgba(5,5,5,1);
+		padding:9px;
+		position:relative;
+		bottom:40px;
+	}
+	.daohang1 .jiateshu{
+		width:100px;
+	}
+	.daohang1 .jiateshu a{
+		width:90px;
+	}
+	.daohang1 a:hover{
+		display:inline-block;
+		border-bottom:2px solid rgba(0, 164, 255, 1);
+	}
+	.daohang .jiateshu a:hover{
+		width:100px;
+	}
+	.seach{
+		width:411px;
+		height:40px;
+		border-color:rgba(0,164,255,1);
+		padding-left:19px;
+		float:left;
+	}		
+	.submit{
+		width:50px;
+		height:44px;
+		background:rgba(0,164,255,1) url(雪梨在线_slices/fa-search.png) no-repeat center center;
+		vertical-align:middle;
+		border:none;
+		float:left;
+	}
+	.duanluo2{
+		width:60px;
+		height:12px;
+		font-size:14px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(102,102,102,1);
+		float:right;
+		position:relative;
+		left:575px;
+	}
+	.header-middle-top{
+		height:420px;
+		line-height:420px;
+		position:relative;
+	}
+	.container2{
+		width:1920px;
+		height:420px;
+		background:rgba(28,3,108,1) url(雪梨在线_slices/banner2.png) no-repeat 390px 0;
+	}
+	.daohang2{
+		width:150px;
+		height:366px;
+		font-size:14px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		line-height:44px;
+		background:rgba(0,0,0,0.3);
+		list-style-type:none;
+		margin:0 auto;
+		position:relative;
+		left:360px;
+		display:inline-block;
+		padding:27px 20px;
+	}
+	.daohang2 li{
+		width:101;
+
+	}
+	.daohang2 img{
+		float:right;
+		position:relative;
+		top:15px;
+	}
+	.daohang2 a{
+		color:rgba(255, 255, 255, 1);
+	}
+	.teshu1 a{
+		color:rgba(0, 180, 255, 1);
+	}
+	.header-middle-middle{
+		height:60px;
+		line-height:60px;
+	}
+	.container3{
+		width:1139px;
+		height:60px;
+		margin:8px auto;
+		box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+		padding-right:61px;
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:bold;
+	}
+	.daohang3{
+		height:18px;
+		float:left;
+		padding-top:22px;
+	}
+	.daohang3 li{
+		float:left;
+		width:120px;
+		height:16px;
+		line-height:16px;
+		text-align:left;
+		padding-left:24px;
+	}
+	.teshu3{
+		border-right:1px solid rgba(191,191,191,1);
+	}
+	.daohang3 a{
+		color: rgba(5, 5, 5, 1);
+	}
+	.teshu2{
+		border-right:1px solid rgba(191,191,191,1);
+	}
+	.teshu2 a{
+		color:rgba(0, 164, 255, 1);
+	}
+	.duanluo3{
+		float:right;
+		color:rgba(0, 164, 255, 1);
+		font-size:14px;
+	}
+	.header-middle-bottom{
+		height:1403px;
+	}
+	.container4{
+		width:1200px;
+		height:1403px;
+		margin:0px auto;
+		text-align:center;
+	}
+	.duanluo4{
+		width:80px;
+		height:19px;
+		font-size:20px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(73,73,73,1);
+		float:left;
+		display:inline-block;
+	}
+	.duanluo5{
+		width:48px;
+		height:13px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(165,165,165,1);
+		float:right;
+		display:inline-block;
+		margin-right:31px;
+	}
+	.duanluo5 a{
+		color:rgba(165,165,165,1);
+	}
+	.daohang4{
+		float:left;
+		margin-top:21px;
+	}
+	.daohang4 img{
+		width:228px;
+		height:155px;
+	}
+	.daohang4 li{
+		width:228px;
+		height:270px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);
+		float:left;
+	}
+	.daohang4 .putong{
+		width:228px;
+		height:270px;
+		background:rgba(255,255,255,1);
+		box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);
+		float:left;
+		margin-right:15px;
+		margin-bottom:15px;
+	}
+	.dazi{
+		font-size:14px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		line-height:20px;
+		margin:24px 20px 18px 23px;
+	}
+	.dazi a{
+		color:rgba(5,5,5,1);
+	}
+	.daohang4 span{
+		color:rgba(255, 124, 45, 1);
+		font-size:12px;
+	}
+	.xiaozi{
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(153, 153, 153, 1);
+	}
+	.duanluo6{
+		width:140px;
+		height:19px;
+		font-size:20px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(73,73,73,1);
+		float:left;
+		display:inline-block;
+		margin-top:12px;
+	}
+	.duanluo7{
+		width:48px;
+		height:13px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(165,165,165,1);
+		float:right;
+		display:inline-block;
+		margin-right:31px;
+		margin-top:26px;
+	}
+	.daohang5{
+		display:inline-block;
+		float:left;
+		margin-left:291px;
+		margin-top:12px;
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+	}
+	.daohang5 a{
+		color:rgba(134, 134, 134, 1);
+	}
+	.daohang5 li{
+		width:82px;
+		height:17px;
+		float:left;
+	}
+	.daohang5 .teshu4 a{
+		color:rgba(0, 164, 255, 1);
+	}
+	.duanluo8{
+		width:80px;
+		height:19px;
+		font-size:20px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(73,73,73,1);
+		margin-top:12px;
+		display:block;
+	}
+	.daohang6{
+			float:left;
+			display:inline-block;
+			margin-top:33px;
+			position:relative;
+	}
+	.duanluo9{
+		color:#FFFFFF;
+		font-size:27px;
+		position:absolute;
+		left:25px;
+		top:99px;
+		text-align:left;
+	}
+	.duanluo9 span{
+		color:#F9E103;
+		font-size:30px ;
+	}
+	.dianji{
+		border:1px solid #F9E103;
+		width:87px;
+		height:25px;
+		font-size:13.24px;
+		position:absolute;
+		left:28px;
+		top:173px;
+		line-height:25px;
+	}
+	.dianji a{
+		color:rgba(249, 225, 3, 1);
+	}
+	.daohang6{
+		float:left;
+	}
+	.daohang6 li{
+		float:left;
+	}
+	.yi{
+		margin-right:15px;
+		position:relative;
+	}
+	.er{
+		width:228px;
+		height:320px;
+		margin-top:20px;
+	}
+	.jieshao4,.jieshao5,.jieshao6{
+		position:relative;
+	}
+	.jieshao1,.jieshao2,.jieshao3{
+		width:175px;
+		height:83px;
+		font-size:12px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(255,255,255,1);
+		line-height:20px;
+		position:absolute;
+		bottom:5px;
+		text-align:left;
+		background:rgba(0,0,0,0.5);
+		padding:21px 28px 18px 25px;
+	}
+	.da{
+		font-size:18px ;
+		color:rgba(255, 255, 255, 1);
+		font-family:Microsoft YaHei;
+		font-weight:bold;
+		line-height:18px;
+		position:absolute;
+		left:29px;
+		top:21px;
+		padding-bottom:12px;
+	}
+	.jieshao1 .zhong{
+		font-size:14px;
+		font-family:Microsoft YaHei;
+		font-weight:;
+		color:rgba(255,255,255,1);
+		line-height:14px;
+		position:absolute;
+		right:91px;
+		bottom:83px;
+	}
+	.jieshao2 .zhong,.jieshao3 .zhong{
+		font-size:14px;
+		font-family:Microsoft YaHei;
+		font-weight:;
+		color:rgba(255,255,255,1);
+		line-height:14px;
+		position:absolute;
+		right:105px;
+		bottom:83px;
+	}
+	.xiao{
+		position:absolute;
+		top:51px;
+	}
+	.header-bottom{
+		height:417px;
+	}
+	.container5{
+		width:1917px;
+		background:rgba(255,255,255,1);
+		margin:0 auto;
+		height:417px;
+		padding:124px 386px 141px 380px;
+	}
+	.duanluo10{
+		width:144px;
+		height:36px;
+		font-size:36px;
+		font-family:Microsoft YaHei;
+		font-weight:bold;
+		color:rgba(0,164,255,1);
+		line-height:21px;
+		display:inline-block;
+		float:left;
+	}
+	.duanluo11{
+		font-size:12px;
+		font-family:SimSun;
+		font-weight:400;
+		color:rgba(102,102,102,1);
+		line-height:18px;
+		text-align:left;
+		display:inline-block;
+		position:relative;
+		right:143px;
+		top:71px;
+		float:left;
+	}
+	.duanluo12{
+		width:120px;
+		height:36px;
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		line-height:16px;
+		text-align:center;
+		border:1px solid rgba(0,164,255,1);
+		position:relative;
+		top:112px;
+	}
+	.duanluo12 a{
+		color:rgba(0,164,255,1);
+		position:absolute;
+		top:11px;
+		right:30px;
+		bottom:10px;
+		left:27px;
+	}
+	.duanluo13{
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		float:left;
+		display:inline-block;
+		position:relative;
+		left:567px;
+		bottom:41px;
+	}
+	.daohang7{
+		width:48px;
+		height:96px;
+		font-size:12px;
+		font-family:SimSun;
+		font-weight:400;
+		line-height:21px;
+		position:relative;
+		left:567px;
+		bottom:26px;
+	}
+	.daohang7 a{
+		color:rgba(51,51,51,1);
+	}
+	.duanluo14{
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		position:relative;
+		left:807px;
+		bottom:140px;
+	}
+	.daohang8{
+		width:96px;
+		height:96px;
+		font-size:12px;
+		font-family:SimSun;
+		font-weight:400;
+		line-height:21px;
+		position:relative;
+		left:807px;
+		bottom:125px;
+	}
+	.daohang8 a{
+		color:rgba(51,51,51,1);
+	}
+	.duanluo15{
+		font-size:16px;
+		font-family:Microsoft YaHei;
+		font-weight:400;
+		color:rgba(51,51,51,1);
+		line-height:21px;
+		position:relative;
+		bottom:265px;
+		left:1023px;
+	}
+	.daohang9{
+		width:48px;
+		height:33px;
+		font-size:12px;
+		font-family:SimSun;
+		font-weight:400;
+		line-height:21px;
+		position:relative;
+		left:1023px;
+		bottom:250px;
+	}
+	.daohang9 a{
+		color:rgba(51,51,51,1);
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="header-top">
+			<div class="container clear">
+				<p class="duanluo1">雪梨在线</p>
+				<ul class="daohang1 clear">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">课程</a></li>
+					<li class="jiateshu"><a href="#">职业规划</a></li>
+				</ul>
+				<form class="biaodan clear">
+					<input type="text" placeholder="输入关键字" class="seach"/>
+					<input type="button" class="submit"/>
+				</form>
+				<p class="duanluo2">个人中心</p>
+			</div>
+		</div>
+		<div class="header-middle-top">
+			<div class="container2">
+				<ul class="daohang2 clear">
+					<li class="teshu1"><a href="#">前端开发</a><img src="雪梨在线_slices/形状 3 拷贝.png"></li>
+					<li><a href="#">后端开发</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">移动开发</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">人工智能</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">商业预测</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">云计算&大数据</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">运维&从测试</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">UI设计</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+					<li><a href="#">产品</a><img src="雪梨在线_slices/形状 3 拷贝 2.png"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-middle-middle">
+			<div class="container3 clear">
+				<ul class="daohang3">
+					<li class="teshu2"><a href="#">精品推荐</a></li>
+					<li class="teshu3"><a href="#">JQuery</a></li>
+					<li class="teshu3"><a href="#">Spark</a></li>
+					<li class="teshu3"><a href="#">MySQL</a></li>
+					<li class="teshu3"><a href="#">JavaWeb</a></li>
+					<li class="teshu3"><a href="#">MySQL</a></li>
+					<li><a href="#">JavaWeb</a></li>
+				</ul>
+				<p class="duanluo3">修改兴趣</p>
+			</div>
+		</div>
+		<div class="header-middle-bottom">
+			<div class="container4 clear">
+				<p class="duanluo4">精品推荐</p>
+				<a href="#" class="duanluo5">查看全部</a>
+				<div class="kaitou clear">
+					<ul class="daohang4">
+						<li class="putong"><img src="雪梨在线_slices/图层 133.png"/>
+							<p class="dazi"><a href="#">Think PHP 5.0 博客系统实战项目训练</a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 135.png">
+						<p class="dazi"><a href="#">Android 网络图片加载框架详解</a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 136.png">
+						<p class="dazi"><a href="#">Angular 2 最新框架+主流技术+项目实战 </a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 137.png">
+						<p class="dazi"><a href="#">Android Hybrid APP开发实战 H5+原生！</a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li><img src="雪梨在线_slices/图层 137.png">
+						<p class="dazi"><a href="#">Android Hybrid APP开发实战 H5+原生！</a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 133.png">
+						<p class="dazi"><a href="#">Think PHP 5.0 博客系统实战项目演练 </a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 135.png">
+						<p class="dazi"><a href="#">Android 网络图片加载框架详解 </a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 136.png">
+						<p class="dazi"><a href="#">Angular 2 最新框架+主流技术+项目实战 </a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 137.png"/>
+						<p class="dazi"><a href="#">Android Hybrid APP开发实战 H5+原生！</a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li><img src="雪梨在线_slices/图层 137.png">
+						<p class="dazi"><a href="#">Android Hybrid APP开发实战 H5+原生！</a></p>
+						<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+					</ul>
+				</div>
+				<p class="duanluo6">前端开发工程师</p>
+				<ul class="daohang5">
+					<li class="teshu4"><a href="#">热门</a></li>
+					<li><a href="#">初级</a></li>
+					<li><a href="#">中级</a></li>
+					<li><a href="#">高级</a></li>
+				</ul>
+				<a href="#" class="duanluo7">查看全部</a>
+				<div class="jiewei">
+					<ul class="daohang4">
+						<li class="putong"><img src="雪梨在线_slices/图层 142.png"/>
+							<p class="dazi"><a href="#">微软人工智能-数据分析平台</a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 144.png"/>
+							<p class="dazi"><a href="#">Unity Profiler入门 </a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 143.png"/>
+							<p class="dazi"><a href="#">
+Cocos2d-x 引擎源码中的纹理优化 </a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li class="putong"><img src="雪梨在线_slices/图层 146.png"/>
+							<p class="dazi"><a href="#">Kami2首页界面切换效果</a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+						<li><img src="雪梨在线_slices/图层 145.png"/>
+							<p class="dazi"><a href="#">
+Android Hybrid APP开发实战 H5+原生！ </a></p>
+							<p class="xiaozi"><span>高级</span>·1125人在学习</p>
+						</li>
+					</ul>
+				</div>
+				<p class="duanluo8">牛人推荐</p>
+				<ul class="daohang6">
+					<li class="yi">
+						<br><img src="雪梨在线_slices/图层 149.png">
+						<p class="duanluo9"><span>毕业季</span><br>带你华丽转身</p>
+						<p class="dianji"><a href="#">点击查看</a></p>
+					</li>
+					<li class="yi">
+						<div class="jieshao4"><img src="雪梨在线_slices/20172124182104355.png"  class="er">
+						<p class="jieshao1"><span class="da">闻老师</span><span class="zhong">大数据</span><span class="xiao">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发……</span></p></div>
+					</li>
+					<li class="yi">
+						<div class="jieshao5"><img src="雪梨在线_slices/20154025104058710.png"
+						 class="er">
+						<p class="jieshao2"><span class="da">汪老师</span><span class="zhong">前端</span><span class="xiao">高级软件架构师，全栈开发，多年大型项目管理经验。对Web Components、Node.js…</span></p></div>
+					</li>
+					<li>
+						<div class="jieshao6"><img src="雪梨在线_slices/20154325104317144 (1).png" class="er">
+						<p class="jieshao3"><span class="da">江老师</span><span class="zhong">前端</span><span class="xiao">多年软件开发经验和教学经验，精通html，css，js,asp.net等编程语言和数据库系统……</span></p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container5 clear">
+				<p class="duanluo10">雪梨在线</p>
+				<p class="duanluo11">致力于普及中国最好的教育,与中国一流大学和机构合作提供在线课程。</p>
+				<p class="duanluo12"><a href="#">下载APP</a></p>
+				<p class="duanluo13">关于雪梨网</p>
+				<ul class="daohang7">
+					<li><a href="#">关于</a></li>
+					<li><a href="#">管理团队</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+				<p class="duanluo14">新手指南</p>
+				<ul class="daohang8">
+					<li><a href="#">如何注册</a></li>
+					<li><a href="#">如何选课</a></li>
+					<li><a href="#">如何拿到毕业证</a></li>
+					<li><a href="#">学分是什么</a></li>
+					<li><a href="#">考试未通过怎么办</a></li>
+				</ul>
+				<p class="duanluo15">合作伙伴</p>
+				<ul class="daohang9">
+					<li><a href="#">合作机构</a></li>
+					<li><a href="#">合作伙伴</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
